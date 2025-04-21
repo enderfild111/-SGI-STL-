@@ -2,7 +2,7 @@
 #include"public.h"
 
 
-Connection::Connection() {
+Connection::Connection() : _alivetime(0) {
 	_conn = mysql_init(nullptr);
 }
 Connection::~Connection() {
